@@ -18,9 +18,9 @@ export default function CheckoutForm() {
       return;
     }
 
-    // This payment ID should never be hardcoded
+    // This Client Secret ID should never be hardcoded
     // but for the sake of simplicity for this example, it is
-    const CLIENT_SECRET = 'YOUR_PAYMENT_ID';
+    const CLIENT_SECRET = 'YOUR_CLIENT_SECRET_ID';
 
     const result = await stripe.confirmCardPayment(CLIENT_SECRET, {
       payment_method: {

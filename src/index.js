@@ -7,7 +7,7 @@ import CheckoutForm from './CheckoutForm';
 
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
-const stripePromise = loadStripe("pk_test_2qji9V0IzbZJgRz0cnxSvurV00Q4EfaZmN");
+const stripePromise = loadStripe("YOUR_PUBLISHABLE_KEY_ID");
 
 function App() {
   return (
